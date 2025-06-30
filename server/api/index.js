@@ -134,7 +134,7 @@ function recursiveDiff(obj1, obj2, options = {}, path = "") {
   return changes;
 }
 
-app.post("/", (req, res) => {
+app.post("/diff", (req, res) => {
   const {
     json1,
     json2,
