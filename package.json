@@ -1,0 +1,19 @@
+{
+  "name": "large-json-diff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@codemirror/lang-json": "^6.0.2",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@codemirror/view": "^6.37.2",
+    "@uiw/react-codemirror": "^4.23.14"
+  }
+}
