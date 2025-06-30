@@ -49,7 +49,7 @@ The client will run on `http://localhost:5173` (default Vite port).
 
 ## Code Explanation
 
-### Backend (`server/server.js`)
+### Backend (`server/index.js`)
 
 - **Express server** with CORS and JSON body parsing.
 - **POST /diff** endpoint:

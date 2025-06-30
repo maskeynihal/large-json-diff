@@ -1,12 +1,12 @@
 {
   "name": "large-json-diff-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node api/index.js",
     "build": "echo \"No build step required\"",
-    "dev": "node index.js"
+    "dev": "node api/index.js"
   },
   "keywords": [],
   "author": "",
