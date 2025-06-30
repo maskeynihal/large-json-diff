@@ -26,7 +26,8 @@ function App() {
     }
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:1123/diff", {
+      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:1123";
+      const res = await fetch(`${apiUrl}/diff`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
