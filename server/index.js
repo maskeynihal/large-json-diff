@@ -154,5 +154,7 @@ app.post("/diff", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
+
+module.exports = app;
