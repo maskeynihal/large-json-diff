@@ -5,7 +5,18 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+const allowedOrigins = [
+  `http://localhost:${PORT}`, // or whatever your local dev port is
+  "https://large-json-diff.nihal.com.np",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
+
 app.use(express.json({ limit: "10mb" }));
 
 // Helper to recursively remove ignored keys from an object
