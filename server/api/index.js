@@ -8,6 +8,8 @@ const PORT = process.env.PORT || 3000;
 const allowedOrigins = [
   `http://localhost:${PORT}`, // or whatever your local dev port is
   "https://large-json-diff.nihal.com.np",
+  "https://large-json-diff-server.onrender.com",
+  "https://large-json-diff-server-on-render.nihal.com.np",
 ];
 
 app.use(
